@@ -1,0 +1,6 @@
+version: "3.6"
+services:
+  front-end:
+    build: .
+    ports:
+      - 9002:9002
