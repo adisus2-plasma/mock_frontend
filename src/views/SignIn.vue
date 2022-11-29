@@ -13,8 +13,8 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from "vue-router";
 const email = ref("");
 const password = ref("");
-const errMsg = ref()
-const router = useRouter()
+const errMsg = ref();
+const router = useRouter();
 
 const register = () => {
     signInWithEmailAndPassword(getAuth(), email.value, password.value)
