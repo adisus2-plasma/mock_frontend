@@ -12,7 +12,7 @@ export default {
   },
   methods: {
     callBackEnd: () => {
-       axios.get('http://localhost:9005/health').then((data) => {
+       axios.get('https://demo.mock-be-ocpp-diz.cf/health').then((data) => {
         console.log(data)
        }).catch((error) => {
         console.log(error)
